@@ -3,6 +3,7 @@ import React from 'react';
 
 function NavBar() {
     const [click, setClick] = React.useState(false);
+    
 
     const handleClick = () => setClick(!click);
     const Close = () => setClick(false);
@@ -13,9 +14,14 @@ function NavBar() {
             <nav className="navbar" onClick={(e) => e.stopPropagation()}>
                 <div className="nav-container">
                     <NavLink exact to="/" className="nav-logo">
-                        <img src="./logo-gold-allwhite.svg"></img>
+                        <img src="/src/assets/logo-gold-allwhite.svg"></img>
                     </NavLink>
                     <ul className={click ? "nav-menu active" : "nav-menu"}>
+                        <li className="nav-item">
+                            <NavLink exact to="/" activeClassName="active" className="nav-links" onClick={click ? handleClick : null}>
+                                Home
+                            </NavLink>
+                        </li>
                         <li className="nav-item">
                             <NavLink exact to="/" activeClassName="active" className="nav-links" onClick={click ? handleClick : null}>
                                 Home
