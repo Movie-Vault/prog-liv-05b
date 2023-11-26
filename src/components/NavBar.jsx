@@ -1,10 +1,9 @@
 import { NavLink } from 'react-router-dom';
 import React from 'react';
+import SearchBar from './SearchBar';
 
 function NavBar() {
     const [click, setClick] = React.useState(false);
-    
-
     const handleClick = () => setClick(!click);
     const Close = () => setClick(false);
 
@@ -16,11 +15,11 @@ function NavBar() {
                     <NavLink exact to="/" className="nav-logo">
                         <img src="/src/assets/logo-gold-allwhite.svg"></img>
                     </NavLink>
+
+
                     <ul className={click ? "nav-menu active" : "nav-menu"}>
                         <li className="nav-item">
-                            <NavLink exact to="/" activeClassName="active" className="nav-links" onClick={click ? handleClick : null}>
-                                Home
-                            </NavLink>
+                            < SearchBar />
                         </li>
                         <li className="nav-item">
                             <NavLink exact to="/" activeClassName="active" className="nav-links" onClick={click ? handleClick : null}>
