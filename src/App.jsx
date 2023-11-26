@@ -17,8 +17,8 @@ function App() {
         <div className="pages">
           <Routes>
             <Route exact path="/" component={Home} />
-            <Route path="/aboutus" component={AboutUs} />
             <Route path="/categories" component={Categories} />
+            <Route path="/aboutus" component={AboutUs} />
           </Routes>
         </div>
       </BrowserRouter>

@@ -15,20 +15,10 @@ function NavBar() {
                     <NavLink exact to="/" className="nav-logo">
                         <img src="/src/assets/logo-gold-allwhite.svg"></img>
                     </NavLink>
-
-
                     <ul className={click ? "nav-menu active" : "nav-menu"}>
-                        <li className="nav-item">
-                            < SearchBar />
-                        </li>
                         <li className="nav-item">
                             <NavLink exact to="/" activeClassName="active" className="nav-links" onClick={click ? handleClick : null}>
                                 Home
-                            </NavLink>
-                        </li>
-                        <li className="nav-item">
-                            <NavLink exact to="/aboutus" activeClassName="active" className="nav-links" onClick={click ? handleClick : null}>
-                                About Us
                             </NavLink>
                         </li>
                         <li className="nav-item">
@@ -36,6 +26,14 @@ function NavBar() {
                                 Categories
                             </NavLink>
                         </li>
+                        <li className="nav-item">
+                            <NavLink exact to="/aboutus" activeClassName="active" className="nav-links" onClick={click ? handleClick : null}>
+                                About Us
+                            </NavLink>
+                        </li>
+                        <li className="search-bar">
+                            < SearchBar />
+                        </li>                
                     </ul>
                     <div className="nav-icon" onClick={handleClick}>
                         <i className={click ? "fa fa-times" : "fa fa-bars"}></i>

@@ -2,6 +2,11 @@
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
+  --primary-bg: blue;
+  --secondary-bg: #fff;
+  --primary-text-color: red;
+  --border-radius: 8px;
+  --speed: 500ms;
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
@@ -18,4 +23,10 @@ body {
   /* display: flex; */
 }
 
+ul {
+  list-style: none;
+}
 
+a {
+  text-decoration: none;
+}
