@@ -23,10 +23,11 @@ const SearchBar = () => {
     };
 
     return (
-        <div>
+        <div >
             <input
                 type="text"
-                placeholder="Recherchez des films..."
+                className="input"
+                placeholder="Enter Movie Title, Actor's Name"
                 value={query}
                 onChange={(e) => setQuery(e.target.value)}
             />

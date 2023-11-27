@@ -35,7 +35,7 @@
   display: flex;
   list-style: none;
   text-align: center;
-  margin-right: 2rem;
+
 }
 
 .nav-links {
@@ -56,20 +56,30 @@
   margin-left: 1rem;
 }
 
-.search-bar {
-  margin: 5px 50px 5px;
+/* .search-bar {
+
+} */
+
+.input {
+  background-color: white;
+  font-size: 12px;
+  width: 200px;
+  height: 20px;
+  border: 2px solid #5c8075;
+  border-radius: 10px;
+  padding: 4px;
 }
 
 button {
-  background-color: #490808;
-  padding: 2px;
+  background-color:#5c8075;
+  border: 1px solid #5c8075;
+  margin: 5px;
+  
 }
 
 
 .fa-magnifying-glass {
   color: white;
-  width: 20px;
-  height: 12px;
 }
 
 .nav-item {
@@ -93,10 +103,10 @@ button {
   background: #ffdd40;
 }
 
-/* .nav-item.active {
+.nav-item.active {
   color: #ffdd40;
   border: 1px solid #ffdd40;
-} */
+}
 
 .nav-icon {
   display: none;

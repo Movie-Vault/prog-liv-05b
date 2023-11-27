@@ -31,10 +31,10 @@ function NavBar() {
                                 About Us
                             </NavLink>
                         </li>
-                        <li className="search-bar">
-                            < SearchBar />
-                        </li>                
                     </ul>
+                    <div className="search-bar">
+                        < SearchBar />
+                    </div>
                     <div className="nav-icon" onClick={handleClick}>
                         <i className={click ? "fa fa-times" : "fa fa-bars"}></i>
                     </div>
