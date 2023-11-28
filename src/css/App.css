@@ -71,10 +71,10 @@
 }
 
 button {
-  background-color:#5c8075;
+  background-color: #5c8075;
   border: 1px solid #5c8075;
   margin: 5px;
-  
+
 }
 
 
@@ -117,7 +117,6 @@ button {
 
   .nav-menu {
     display: flex;
-    /* align-items: center; */
     flex-direction: column;
     width: 100%;
     border-top: 1px solid #490808;
@@ -129,7 +128,7 @@ button {
   }
 
   .nav-menu.active {
-    background: #1f5156;
+    background: #5c8075;
     left: 0px;
     opacity: 1;
     transition: all 0.5s ease;
