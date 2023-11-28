@@ -1,10 +1,10 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import React from 'react';
-import NavBar from './components/NavBar';
+import NavBar from './components/Navbar';
 // import MoviesSearch from './components/MoviesSearch';
-import Home from './components/Home';
-import AboutUs from './components/AboutUs';
-import Categories from './components/Categories';
+import Home from './components/pages/Home';
+import AboutUs from './components/pages/AboutUs';
+import Categories from './components/pages/Categories';
 import '/src/css/App.css'
 
 

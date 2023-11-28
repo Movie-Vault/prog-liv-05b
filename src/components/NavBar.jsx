@@ -2,17 +2,35 @@ import { NavLink } from 'react-router-dom';
 import React, { useState } from 'react';
 import SearchBar from './SearchBar';
 import Dropdown from './Dropdown';
+import './css/Navbar.css';
 
 
-function NavBar() {
-    const [click, setClick] = React.useState(false);
-    const handleClick = () => setClick(!click);
-    const Close = () => setClick(false);
+function Navbar() {
+    const [click, setClick] = useState(false);
     const [dropdown, setDropdown] = useState(false);
 
+    const handleClick = () => setClick(!click);
+    const closeMobileMenu = () => setClick(false);
+
+    const onMouseEnter = () => {
+        if (window.innerWidth < 960) {
+            setDropdown(false);
+        } else {
+            setDropdown(true);
+        }
+    };
+
+    const onMouseLeave = () => {
+        if (window.innerWidth < 960) {
+            setDropdown(false);
+        } else {
+            setDropdown(false);
+        }
+    };
+
     return (
-        <div>
-            <div className={click ? "main-container" : ""} onClick={() => Close()}></div>
+        <>
+            <div className={click ? "main-container" : ""} onClick={() => closeMobileMenu()}></div>
             <nav className="navbar" onClick={(e) => e.stopPropagation()}>
                 <div className="nav-container">
                     <NavLink exact to="/" className="nav-logo">
@@ -24,12 +42,15 @@ function NavBar() {
                                 Home
                             </NavLink>
                         </li>
-                        <li className="nav-item">
+                        <li className="nav-item"
+                            onMouseEnter={onMouseEnter}
+                            onMouseLeave={onMouseLeave}
+                        >
                             <NavLink exact to="/categories" activeClassName="active" className="nav-links" onClick={click ? handleClick : null}>
                                 Categories <i className="fa-solid fa-chevron-down"></i>
                             </NavLink>
                             <Link>
-                            {dropdown && <Dropdown />}
+                                {dropdown && <Dropdown />}
                             </Link>
                         </li>
                         <li className="nav-item">
@@ -46,8 +67,8 @@ function NavBar() {
                     </div>
                 </div>
             </nav>
-        </div>
+        </>
     );
 }
 
-export default NavBar;
+export default Navbar;
