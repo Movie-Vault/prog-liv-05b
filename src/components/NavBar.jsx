@@ -2,9 +2,6 @@ import { Link, NavLink } from 'react-router-dom';
 import React, { useState } from 'react';
 import SearchBar from './SearchBar';
 import Dropdown from './Dropdown';
-import { Logo } from '/src/assets/logo-gold-allwhite.svg';
-import { Notif } from '/src/assets/notif-icon.svg';
-import { Account } from '/src/assets/account-icon.svg'
 import '/src/css/Navbar.css';
 
 
@@ -37,7 +34,7 @@ function Navbar() {
             <nav className="navbar" onClick={(e) => e.stopPropagation()}>
                 <div className="nav-container">
                     <NavLink exact to="/" className="nav-logo">
-                        <img src={Logo}></img>
+                        <img src="/src/assets/logo-gold-allwhite.svg"></img>
                     </NavLink>
                     <ul className={click ? "nav-menu active" : "nav-menu"}>
                         <li className="nav-item">
@@ -66,16 +63,20 @@ function Navbar() {
                                 < SearchBar />
                             </NavLink>
                         </li>
+                        <div>
+                            <img
+                                className="notif-icon"
+                                src="/src/assets/notif-icon.svg">
+                            </img>
+                            <img
+                                className="account-icon"
+                                src="/src/assets/account-icon.svg">
+                            </img>
+                        </div>
                     </ul>
                     <div className="nav-icon" onClick={handleClick}>
                         <i className={click ? "fa fa-times" : "fa fa-bars"}></i>
                     </div>
-                    <div>
-                        <img className="notif-icon" src={Notif}></img>
-                    </div>
-                    <div>
-                        <i className="account-icon" src={Account}></i>
-                    </div>            
                 </div>
             </nav>
         </>
