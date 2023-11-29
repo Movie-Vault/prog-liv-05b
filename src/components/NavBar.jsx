@@ -10,7 +10,7 @@ function Navbar() {
     const [dropdown, setDropdown] = useState(false);
 
     const handleClick = () => setClick(!click);
-    const closeMobileMenu = () => setClick(false);
+    // const closeMobileMenu = () => setClick(false);
 
     const onMouseEnter = () => {
         if (window.innerWidth < 960) {

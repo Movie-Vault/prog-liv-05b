@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import React from 'react';
 import Navbar from './components/Navbar';
 import Home from './components/pages/Home';
@@ -9,14 +9,18 @@ import '/src/css/App.css'
 
 function App() {
   return (
-    <Router>
-      <Navbar />
-      <Routes>
-        <Route path="/" component={Home} />
-        <Route path="/categories" component={Categories} />
-        <Route path="/aboutus" component={AboutUs} />
-      </Routes>
-    </Router>
+    <React.Fragment>
+      <BrowserRouter>
+        <Navbar />
+        <div className="pages">
+          <Routes>
+            <Route exact path="/" component={Home} />
+            <Route path="/categories" component={Categories} />
+            <Route path="/aboutus" component={AboutUs} />
+          </Routes>
+        </div>
+      </BrowserRouter>
+    </React.Fragment>
   );
 }
 
