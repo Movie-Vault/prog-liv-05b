@@ -23,7 +23,7 @@ const SearchBar = () => {
     };
 
     return (
-        <div >
+        <div className="search-bar">
             <input
                 type="text"
                 className="input"
@@ -31,7 +31,7 @@ const SearchBar = () => {
                 value={query}
                 onChange={(e) => setQuery(e.target.value)}
             />
-            <button onClick={handleSearch}><i class="fa-solid fa-magnifying-glass"></i></button>
+            <button onClick={handleSearch} className="fa-solid fa-magnifying-glass"></button>
         </div>
     );
 };

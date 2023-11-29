@@ -1,8 +1,8 @@
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import React, { useState } from 'react';
 import SearchBar from './SearchBar';
 import Dropdown from './Dropdown';
-import './css/Navbar.css';
+import '/src/css/Navbar.css';
 
 
 function Navbar() {
@@ -38,7 +38,7 @@ function Navbar() {
                     </NavLink>
                     <ul className={click ? "nav-menu active" : "nav-menu"}>
                         <li className="nav-item">
-                            <NavLink exact to="/" activeClassName="active" className="nav-links" onClick={click ? handleClick : null}>
+                            <NavLink exact to="/" className="nav-links" onClick={click ? handleClick : null}>
                                 Home
                             </NavLink>
                         </li>
@@ -46,7 +46,7 @@ function Navbar() {
                             onMouseEnter={onMouseEnter}
                             onMouseLeave={onMouseLeave}
                         >
-                            <NavLink exact to="/categories" activeClassName="active" className="nav-links" onClick={click ? handleClick : null}>
+                            <NavLink exact to="/categories" className="nav-links" onClick={click ? handleClick : null}>
                                 Categories <i className="fa-solid fa-chevron-down"></i>
                             </NavLink>
                             <Link>
@@ -54,7 +54,7 @@ function Navbar() {
                             </Link>
                         </li>
                         <li className="nav-item">
-                            <NavLink exact to="/aboutus" activeClassName="active" className="nav-links" onClick={click ? handleClick : null}>
+                            <NavLink exact to="/aboutus" className="nav-links" onClick={click ? handleClick : null}>
                                 About Us
                             </NavLink>
                         </li>

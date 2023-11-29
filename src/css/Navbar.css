@@ -1,65 +1,50 @@
 .navbar {
     background-color: #5c8075;
-    height: 80px;
-    display: flex;
-    justify-content: center;
     align-items: center;
     font-size: 1.2rem;
-    /* position: sticky;
+    width: 100%;
+    position: sticky;
     top: 0;
-    z-index: 20; */
+    z-index: 20;
+}
+
+.nav-container {
+    display: flex;
+    height: 80px;
+    justify-content: start;
 }
 
 .nav-logo {
-    color: #fff;
     justify-self: start;
     margin-left: 20px;
     cursor: pointer;
     text-decoration: none;
-    font-size: 2rem;
-}
-
-/* 
-.fa-firstdraft {
-    margin-left: 0.5rem;
-    font-size: 1.6rem;
-} */
-
-.nav-container {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
-    height: 80px;
-    width: 100%;
+    height: 5rem;
+    width: 5rem;
 }
 
 .nav-menu {
-    display: grid;
-    grid-template-columns: repeat(5, auto);
-    grid-gap: 10px;
+    display: flex;
     list-style: none;
     text-align: center;
-    width: 70vw;
-    justify-content: end;
-    margin-right: 2rem;
+    width: 100%;
+    justify-content: space-evenly;
+    margin: 0;
 }
 
 .nav-item {
     display: flex;
     align-items: center;
     height: 80px;
-    /* line-height: 40px;
-    margin-right: 1rem; */
+    margin-right: 1rem;
 }
 
 .nav-links {
     color: white;
     text-decoration: none;
     padding: 0.5rem 1rem;
-    /* font-family: Arial;
-        font-size: 18px;
-        height: 100%; */
+    font-family: Arial;
+    font-size: 18px;
 }
 
 .nav-links.active {
@@ -94,23 +79,26 @@
 } */
 
 .fa-bars {
-    color: #f5d000;
+    /* color: #f5d000;
+    align-content: center; */
+    justify-content: center;
 }
 
 .fa-magnifying-glass {
     color: white;
+    cursor: pointer;
 }
 
 .nav-links-mobile {
     display: none;
 }
 
-.menu-icon {
+.nav-icon {
     display: none;
 }
 
-.nav-icon {
-    display: none;
+.search-bar {
+    margin: 11px;
 }
 
 .input {
@@ -120,7 +108,7 @@
     height: 20px;
     border: 2px solid #5c8075;
     border-radius: 10px;
-    padding: 4px;
+    top: 22px;
 }
 
 button {
@@ -130,28 +118,27 @@ button {
 }
 
 @media screen and (max-width: 960px) {
-    .NavbarItems {
+    /* .NavbarItems {
         position: relative;
-    }
+    } */
 
     .nav-menu {
         display: flex;
         flex-direction: column;
         width: 100%;
-        height: 90vh;
+        height: 50vh;
         position: absolute;
-        top: 80px;
-        left: -100%;
-        opacity: 1;
+        top: -100%;
+        left: 0;
+        opacity: 0;
         transition: all 0.5s ease;
     }
 
     .nav-menu.active {
         background: #5c8075;
-        left: 0;
+        top: 80px;
         opacity: 1;
         transition: all 0.5s ease;
-        z-index: 1;
     }
 
     .nav-links {
@@ -161,29 +148,21 @@ button {
         display: table;
     }
 
-    .navbar-logo {
-        position: absolute;
+    .nav-logo {
+        cursor: pointer;
+        text-decoration: none;
+        height: 5rem;
+        width: 5rem;
         top: 0;
-        left: 0;
-        transform: translate(25%, 50%);
     }
 
-    .menu-icon {
-        display: block;
-        position: absolute;
-        top: 0;
-        right: 0;
-        transform: translate(-100%, 60%);
-        font-size: 1.8rem;
-        cursor: pointer;
-    }
 
     .fa-times {
-        color: #fff;
+        color: #f5d000;
         font-size: 2rem;
     }
 
-    .nav-links-mobile {
+    /* .nav-links-mobile {
         display: block;
         text-align: center;
         padding: 1.5rem;
@@ -194,15 +173,21 @@ button {
         text-decoration: none;
         color: #fff;
         font-size: 1.5rem;
+    } */
+
+
+    .nav-item .active {
+        color: #490808;
+        border: none;
     }
 
-    .nav-links-mobile:hover {
-        background: #fff;
-        color: #1888ff;
-        transition: 250ms;
-    }
-
-    button {
-        display: none;
+    .nav-icon {
+        display: block;
+        position: absolute;
+        right: 22px;
+        top: 22px;
+        font-size: 1.8rem;
+        cursor: pointer;
+        color: #ffdd40;
     }
 }

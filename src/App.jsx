@@ -1,7 +1,6 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import React from 'react';
-import NavBar from './components/Navbar';
-// import MoviesSearch from './components/MoviesSearch';
+import Navbar from './components/Navbar';
 import Home from './components/pages/Home';
 import AboutUs from './components/pages/AboutUs';
 import Categories from './components/pages/Categories';
@@ -12,8 +11,7 @@ function App() {
   return (
     <React.Fragment>
       <BrowserRouter>
-        <NavBar />
-        {/* <MoviesSearch /> */}
+        <Navbar />
         <div className="pages">
           <Routes>
             <Route exact path="/" component={Home} />

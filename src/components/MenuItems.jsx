@@ -88,5 +88,5 @@ export const MenuItems = [
         title: 'Western',
         path: '/western',
         cName: 'dropdown-link'
-    },
+    }
 ];

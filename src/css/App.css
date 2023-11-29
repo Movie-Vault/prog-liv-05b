@@ -10,27 +10,3 @@
 /* .search-bar {
 
 } */
-
-
-.nav-item .active {
-  color: #490808;
-  border: none;
-
-}
-
-.nav-links {
-  padding: 1rem;
-  width: 100%;
-  display: table;
-}
-
-.nav-icon {
-  display: block;
-  position: absolute;
-  top: 0;
-  right: 0;
-  transform: translate(-100%, 60%);
-  font-size: 1.8rem;
-  cursor: pointer;
-  color: #ffdd40;
-}
