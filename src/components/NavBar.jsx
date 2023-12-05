@@ -64,7 +64,7 @@ function Navbar() {
                             </Link>
                             {dropdown && <Dropdown />}
                         </li>
-                        <li className="nav-item">
+                        <li className="nav-item aboutus">
                             <NavLink exact to="/aboutus" className="nav-links" onClick={click ? handleClick : null}>
                                 ABOUT US
                             </NavLink>

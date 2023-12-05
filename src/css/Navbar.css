@@ -10,12 +10,13 @@
 .nav-container {
     display: flex;
     align-items: center;
-    
+    width: 100%;
+    margin-right: 15px;
 }
 
 .nav-menu {
     display: flex;
-    justify-content: start;
+    justify-content: space-around;
     align-items: center;
     list-style: none;
     width: 100%;
@@ -39,6 +40,10 @@
     align-items: center;
     height: 80px;
     margin-right: 1rem;
+}
+
+.nav-item.aboutus {
+    flex: 1;
 }
 
 .nav-links {
@@ -79,7 +84,7 @@
 }
 
 .search-bar {
-    margin: 8px 15px 10px auto;
+    margin-bottom: 10px;
 }
 
 .input {
@@ -125,10 +130,6 @@ button {
         transition: all 0.5s ease;
     }
 
-    .search-bar {
-        margin: auto
-    }
-
     .nav-menu.active {
         background: #5c8075;
         top: 80px;
@@ -136,12 +137,11 @@ button {
         transition: all 0.5s ease;
     }
 
-    .nav-links {
+    /* .nav-links {
         text-align: center;
-        padding: 2rem;
         width: 100%;
         display: table;
-    }
+    } */
 
     .nav-logo {
         display: none;
@@ -149,7 +149,10 @@ button {
 
     .nav-logo-mobile {
         display: flex;
-        margin-left: 70px;
+        /* burger menu espace */
+        margin-right: 110px;
+        flex: 1;
+        justify-content: center;
         cursor: pointer;
         text-decoration: none;
         height: 4rem;
@@ -160,10 +163,18 @@ button {
         border-radius: 50%;
     }
 
-    /* .nav-item .active {
-        color: #490808;
-        border: none;
-    } */
+    .nav-item li {
+        margin: auto;
+        height: 25px;
+    }
+
+    .nav-item.aboutus {
+        flex: none;
+    }
+
+    .fa-chevron-down {
+        display: none;
+    }
 
     .nav-icon {
         display: block;
