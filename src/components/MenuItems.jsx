@@ -1,92 +1,92 @@
 export const MenuItems = [
     {
         title: 'Action',
-        path: '/action',
+        path: '/categories',
         cName: 'dropdown-link'
     },
     {
         title: 'Adventure',
-        path: '/adventure',
+        path: '/categories',
         cName: 'dropdown-link'
     },
     {
         title: 'Animation',
-        path: '/animation',
+        path: '/categories',
         cName: 'dropdown-link'
     },
     {
         title: 'Comedy',
-        path: '/comedy',
+        path: '/categories',
         cName: 'dropdown-link'
     },
     {
         title: 'Crime',
-        path: '/crime',
+        path: '/categories',
         cName: 'dropdown-link'
     },
     {
         title: 'Documentary',
-        path: '/documentary',
+        path: '/categories',
         cName: 'dropdown-link'
     },
     {
         title: 'Drama',
-        path: '/drama',
+        path: '/categories',
         cName: 'dropdown-link'
     },
     {
         title: 'Family',
-        path: '/family',
+        path: '/categories',
         cName: 'dropdown-link'
     },
     {
         title: 'Fantasy',
-        path: '/fantasy',
+        path: '/categories',
         cName: 'dropdown-link'
     },
     {
         title: 'History',
-        path: '/history',
+        path: '/categories',
         cName: 'dropdown-link'
     },
     {
         title: 'Horror',
-        path: '/horror',
+        path: '/categories',
         cName: 'dropdown-link'
     },
     {
         title: 'Music',
-        path: '/music',
+        path: '/categories',
         cName: 'dropdown-link'
     },
     {
         title: 'Mystery',
-        path: '/mystery',
+        path: '/categories',
         cName: 'dropdown-link'
     },
     {
         title: 'Romance',
-        path: '/romance',
+        path: '/categories',
         cName: 'dropdown-link'
     },
     {
         title: 'Sci-Fi',
-        path: '/sci-fi',
+        path: '/categories',
         cName: 'dropdown-link'
     },
     {
         title: 'Thriller',
-        path: '/thriller',
+        path: '/categories',
         cName: 'dropdown-link'
     },
     {
         title: 'War',
-        path: '/war',
+        path: '/categories',
         cName: 'dropdown-link'
     },
     {
         title: 'Western',
-        path: '/western',
+        path: '/categories',
         cName: 'dropdown-link'
     }
 ];

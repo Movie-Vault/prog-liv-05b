@@ -1,18 +1,21 @@
-.dropdown {
-    width: 500px;
+.dropdown-menu {
+    display: flex;
+    flex-flow: column wrap;
     position: absolute;
+    width: 500px;
+    height: 150px;
     top: 80px;
     list-style: none;
-    text-align: start;
 }
 
 .dropdown-menu li {
-    background: #5c8075;
+    background-color: #5c8075;
     cursor: pointer;
+
 }
 
 .dropdown-menu li:hover {
-    background: #5c8075;
+    background: #f5d000;
 }
 
 .dropdown-menu.clicked {
@@ -20,10 +23,7 @@
 }
 
 .dropdown-link {
-    display: inline;
-    width: 100%;
-    height: 100%;
+    display: flex;
     text-decoration: none;
     color: #fff;
-    padding: 16px;
 }
